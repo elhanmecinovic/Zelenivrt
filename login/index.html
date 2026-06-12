@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Zeleni Vrt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo">
+              <img src="../img_logo/logo.svg" alt="Zeleni Vrt logo" />
+            </div>
+            <div class="site-title">
+              <h1 data-translate="siteTitle">Zeleni Vrt</h1>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="../pocetna/index.html" data-translate="navHome"
+                  >Početna</a
+                >
+              </li>
+              <li>
+                <a href="../o_zelenom_vrtu/index.html" data-translate="navAbout"
+                  >O Horoskopu</a
+                >
+              </li>
+              <li>
+                <a href="../zeleni_vrt/index.html" data-translate="navHoroscope"
+                  >Horoskop</a
+                >
+              </li>
+              <li>
+                <a href="../kontakt/index.html" data-translate="navContact"
+                  >Kontakt</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../login/index.html"
+                  class="active"
+                  data-translate="navLogin"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="language-switcher">
+            <button class="lang-btn active" data-lang="sr">SRP</button>
+            <button class="lang-btn" data-lang="en">ENG</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="login-section">
+        <div class="container">
+          <div class="login-container">
+            <div class="login-box">
+              <div class="login-header">
+                <div class="login-icon">🌱</div>
+                <h2 data-translate="loginTitle">Prijavite se</h2>
+                <p data-translate="loginSubtitle">
+                  Pristupite vašem baštovanskom profilu
+                </p>
+              </div>
+
+              <form id="login-form" novalidate>
+                <div class="form-group">
+                  <label for="username" data-translate="usernameLabel"
+                    >Korisničko ime</label
+                  >
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Unesite korisničko ime"
+                    data-translate-placeholder="usernamePlaceholder"
+                    required
+                  />
+                  <span class="error-message" id="username-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="password" data-translate="passwordLabel"
+                    >Lozinka</label
+                  >
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Unesite lozinku"
+                    data-translate-placeholder="passwordPlaceholder"
+                    required
+                  />
+                  <span class="error-message" id="password-error"></span>
+                </div>
+
+                <div class="form-actions">
+                  <a
+                    href="#"
+                    class="forgot-password"
+                    data-translate="forgotPassword"
+                    >Zaboravili ste lozinku?</a
+                  >
+                </div>
+
+                <button
+                  type="submit"
+                  class="login-btn"
+                  data-translate="loginButton"
+                >
+                  Prijavite se
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p data-translate="footer">
+          &copy; 2025 Zeleni Vrt — Elhan Mecinović. Sva prava zadržana.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../shared/translations.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

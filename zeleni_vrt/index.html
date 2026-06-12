@@ -1,0 +1,257 @@
+﻿<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vodič za Sadnju - Zeleni Vrt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo">
+              <img src="../img_logo/logo.svg" alt="Zeleni Vrt logo" />
+            </div>
+            <div class="site-title">
+              <h1 data-translate="siteTitle">Zeleni Vrt</h1>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="../pocetna/index.html" data-translate="navHome"
+                  >Početna</a
+                >
+              </li>
+              <li>
+                <a href="../o_zelenom_vrtu/index.html" data-translate="navAbout"
+                  >O Baštovanstvu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../zeleni_vrt/index.html"
+                  class="active"
+                  data-translate="navHoroscope"
+                  >Vodič za Sadnju</a
+                >
+              </li>
+              <li>
+                <a href="../kontakt/index.html" data-translate="navContact"
+                  >Kontakt</a
+                >
+              </li>
+              <li>
+                <a href="../login/index.html" data-translate="navLogin"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="language-switcher">
+            <button class="lang-btn active" data-lang="sr">SRP</button>
+            <button class="lang-btn" data-lang="en">ENG</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h2 data-translate="horoscopeTitle">Vodič za Sadnju</h2>
+          <p data-translate="horoscopeSubtitle">
+            Izaberite biljku i saznajte kako da je posadite, negujete i uberete
+          </p>
+        </div>
+      </section>
+
+      <div id="login-warning" class="login-warning hidden">
+        <div class="container">
+          <div class="warning-box">
+            <span class="warning-icon">🔒</span>
+            <p data-translate="loginWarning">
+              Morate biti prijavljeni da biste videli vodič za sadnju. Molimo
+              vas da se prijavite.
+            </p>
+            <a
+              href="../login/index.html"
+              class="warning-btn"
+              data-translate="loginButton"
+              >Prijavite se</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <section class="zodiac-signs">
+        <div class="container">
+          <div class="zodiac-grid">
+            <div class="zodiac-card" data-sign="paradajz">
+              <div class="zodiac-icon">🍅</div>
+              <h3 data-translate="pParadajz">Paradajz</h3>
+              <p class="zodiac-dates" data-translate="cParadajz">
+                Povrće · Proleće–Leto
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+
+            <div class="zodiac-card" data-sign="paprika">
+              <div class="zodiac-icon">🫑</div>
+              <h3 data-translate="pPaprika">Paprika</h3>
+              <p class="zodiac-dates" data-translate="cPaprika">
+                Povrće · Proleće–Leto
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+
+            <div class="zodiac-card" data-sign="krastavac">
+              <div class="zodiac-icon">🥒</div>
+              <h3 data-translate="pKrastavac">Krastavac</h3>
+              <p class="zodiac-dates" data-translate="cKrastavac">
+                Povrće · Proleće–Leto
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+
+            <div class="zodiac-card" data-sign="sargarepa">
+              <div class="zodiac-icon">🥕</div>
+              <h3 data-translate="pSargarepa">Šargarepa</h3>
+              <p class="zodiac-dates" data-translate="cSargarepa">
+                Povrće · Proleće–Jesen
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+
+            <div class="zodiac-card" data-sign="salata">
+              <div class="zodiac-icon">🥬</div>
+              <h3 data-translate="pSalata">Zelena salata</h3>
+              <p class="zodiac-dates" data-translate="cSalata">
+                Povrće · Proleće–Jesen
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+
+            <div class="zodiac-card" data-sign="krompir">
+              <div class="zodiac-icon">🥔</div>
+              <h3 data-translate="pKrompir">Krompir</h3>
+              <p class="zodiac-dates" data-translate="cKrompir">
+                Povrće · Proleće
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+
+            <div class="zodiac-card" data-sign="luk">
+              <div class="zodiac-icon">🧅</div>
+              <h3 data-translate="pLuk">Crni luk</h3>
+              <p class="zodiac-dates" data-translate="cLuk">
+                Povrće · Proleće
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+
+            <div class="zodiac-card" data-sign="beliLuk">
+              <div class="zodiac-icon">🧄</div>
+              <h3 data-translate="pBeliLuk">Beli luk</h3>
+              <p class="zodiac-dates" data-translate="cBeliLuk">
+                Povrće · Jesen–Proleće
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+
+            <div class="zodiac-card" data-sign="jagoda">
+              <div class="zodiac-icon">🍓</div>
+              <h3 data-translate="pJagoda">Jagoda</h3>
+              <p class="zodiac-dates" data-translate="cJagoda">
+                Voće · Proleće
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+
+            <div class="zodiac-card" data-sign="bundeva">
+              <div class="zodiac-icon">🎃</div>
+              <h3 data-translate="pBundeva">Bundeva</h3>
+              <p class="zodiac-dates" data-translate="cBundeva">
+                Povrće · Proleće–Leto
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+
+            <div class="zodiac-card" data-sign="kukuruz">
+              <div class="zodiac-icon">🌽</div>
+              <h3 data-translate="pKukuruz">Kukuruz</h3>
+              <p class="zodiac-dates" data-translate="cKukuruz">
+                Povrće · Proleće
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+
+            <div class="zodiac-card" data-sign="bosiljak">
+              <div class="zodiac-icon">🌿</div>
+              <h3 data-translate="pBosiljak">Bosiljak</h3>
+              <p class="zodiac-dates" data-translate="cBosiljak">
+                Začin · Proleće–Leto
+              </p>
+              <button class="read-btn" data-translate="readMore">
+                Pročitaj vodič
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="horoscope-modal" class="modal hidden">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <div class="modal-header">
+          <div class="modal-icon" id="modal-icon"></div>
+          <h2 id="modal-title"></h2>
+        </div>
+        <div class="modal-body">
+          <div id="modal-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p data-translate="footer">
+          &copy; 2025 Zeleni Vrt — Elhan Mecinović. Sva prava zadržana.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../shared/translations.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

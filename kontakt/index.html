@@ -1,0 +1,186 @@
+﻿<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt - Zeleni Vrt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo">
+              <img src="../img_logo/logo.svg" alt="Zeleni Vrt logo" />
+            </div>
+            <div class="site-title">
+              <h1 data-translate="siteTitle">Zeleni Vrt</h1>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="../pocetna/index.html" data-translate="navHome"
+                  >Početna</a
+                >
+              </li>
+              <li>
+                <a href="../o_zelenom_vrtu/index.html" data-translate="navAbout"
+                  >O Horoskopu</a
+                >
+              </li>
+              <li>
+                <a href="../zeleni_vrt/index.html" data-translate="navHoroscope"
+                  >Horoskop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../kontakt/index.html"
+                  class="active"
+                  data-translate="navContact"
+                  >Kontakt</a
+                >
+              </li>
+              <li>
+                <a href="../login/index.html" data-translate="navLogin"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="language-switcher">
+            <button class="lang-btn active" data-lang="sr">SRP</button>
+            <button class="lang-btn" data-lang="en">ENG</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h2 data-translate="contactTitle">Kontaktirajte Nas</h2>
+          <p data-translate="contactSubtitle">
+            Pošaljite nam poruku i javićemo vam se uskoro
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-layout">
+            <div class="contact-info">
+              <h3 data-translate="contactInfoTitle">Informacije</h3>
+              <div class="info-item">
+                <div class="info-icon">📧</div>
+                <div class="info-content">
+                  <h4 data-translate="emailLabel">Email</h4>
+                  <p>info@zelenivrt.rs</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">📱</div>
+                <div class="info-content">
+                  <h4 data-translate="phoneLabel">Telefon</h4>
+                  <p>+381 11 123 4567</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div class="info-content">
+                  <h4 data-translate="addressLabel">Adresa</h4>
+                  <p>Beograd, Srbija</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🎓</div>
+                <div class="info-content">
+                  <h4 data-translate="studentLabel">Student</h4>
+                  <p>Elhan Mecinović</p>
+                  <p data-translate="indexLabel">Broj indeksa: 036037</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-container">
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="fullname" data-translate="nameLabel"
+                    >Ime i Prezime *</label
+                  >
+                  <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Unesite vaše ime i prezime"
+                    data-translate-placeholder="namePlaceholder"
+                    required
+                  />
+                  <span class="help-message" id="fullname-help"></span>
+                  <span class="error-message" id="fullname-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" data-translate="emailInputLabel"
+                    >Email Adresa *</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Unesite vašu email adresu"
+                    data-translate-placeholder="emailPlaceholder"
+                    required
+                  />
+                  <span class="help-message" id="email-help"></span>
+                  <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" data-translate="messageLabel"
+                    >Poruka *</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Unesite vašu poruku"
+                    data-translate-placeholder="messagePlaceholder"
+                    required
+                  ></textarea>
+                  <span class="help-message" id="message-help"></span>
+                  <span class="error-message" id="message-error"></span>
+                </div>
+
+                <button
+                  type="submit"
+                  class="submit-btn"
+                  data-translate="sendButton"
+                >
+                  Pošalji Poruku
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p data-translate="footer">
+          &copy; 2025 Zeleni Vrt — Elhan Mecinović. Sva prava zadržana.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../shared/translations.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
